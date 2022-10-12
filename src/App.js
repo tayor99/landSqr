@@ -1,7 +1,9 @@
+import "./App.scss";
+import { Login } from "./Pages";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">lendsqr</header>
+      <Login />
     </div>
   );
 }

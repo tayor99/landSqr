@@ -1,0 +1,108 @@
+.wrapper {
+  display: flex;
+  .login__left {
+    width: 50%;
+  }
+  .login__leftContainer {
+    width: 75%;
+    margin: 40px auto;
+  }
+  .login__leftHeader {
+    margin-top: 110px;
+  }
+  .logo {
+    width: 173px;
+    height: 38px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .login__leftBody {
+    margin-top: 90px;
+  }
+  .login__right {
+    width: 50%;
+    height: 100vh;
+    box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+  }
+  .login__rightContainer {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto;
+  }
+  .login__rightHeader {
+    margin-bottom: 45px;
+    h1 {
+      font-family: "Bold";
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: #213f7d;
+      margin-bottom: 10px;
+    }
+    p {
+      font-family: "regular";
+      font-weight: 400;
+      font-size: 20px;
+      color: #545f7d;
+    }
+  }
+  .login__form {
+    width: 80%;
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+
+      text-transform: uppercase;
+
+      color: #39cdcc;
+    }
+    > button {
+      cursor: pointer;
+      margin-top: 30px;
+      width: 100%;
+      height: 45px;
+      background: #39cdcc;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #fff;
+      border: none;
+    }
+  }
+  .form__details {
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    height: 50px;
+    padding: 0 15px;
+    border-radius: 5px;
+    input {
+      width: 85%;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+    input::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      color: #545f7d;
+    }
+    button {
+      background-color: #fff;
+      color: #39cdcc;
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

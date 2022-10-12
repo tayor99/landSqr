@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Bold"; /*Can be any text*/
+  src: local("AvenirNextLTPro-Bold"),
+    url("./Fonts/AvenirNextLTPro-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "light"; /*Can be any text*/
+  src: local("AvenirNextLTPro-It"),
+    url("./Fonts/AvenirNextLTPro-It.otf") format("truetype");
+}
+@font-face {
+  font-family: "regular"; /*Can be any text*/
+  src: local("AvenirNextLTPro-Regular"),
+    url("./Fonts/AvenirNextLTPro-Regular.otf") format("truetype");
+}
+$clrWhite: #fff;
+$fontBold: "Bold";
+$fontLight: "light";
+$fontRegular: "regular";
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $clrWhite;
+  font-family: $fontRegular;
+}
