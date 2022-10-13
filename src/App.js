@@ -1,9 +1,11 @@
 import "./App.scss";
-import { Login } from "./Pages";
+import { SharedLayout } from "./Components";
+// import { Login, Dashboard } from "./Pages";
 function App() {
   return (
     <div className="App">
-      <Login />
+      {/* <Login /> */}
+      <SharedLayout />
     </div>
   );
 }
