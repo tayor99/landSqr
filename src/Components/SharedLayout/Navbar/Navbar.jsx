@@ -28,13 +28,11 @@ const Navbar = () => {
               </p>
             </li>
             <li>
-              {/* <div className="img__container"> */}
               <img
                 className="img__container"
                 src={profileImg}
                 alt="profile img"
               />
-              {/* </div> */}
               <p className="username">Adedeji</p>
             </li>
           </ul>

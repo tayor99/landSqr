@@ -1,6 +1,8 @@
 import Navbar from "./Navbar/Navbar";
 import Sidebar from "./Sidebar/Sidebar";
 import "./SharedLayout.scss";
+import { Users } from "../../Pages";
+
 const SharedLayout = () => {
   return (
     <>
@@ -8,8 +10,9 @@ const SharedLayout = () => {
         <div className="sharedLayout__side">
           <Sidebar />
         </div>
-        <div className="sharedLayout__header">
+        <div className="sharedLayout__body">
           <Navbar />
+          <Users />
         </div>
       </div>
     </>

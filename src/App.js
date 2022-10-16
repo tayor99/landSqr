@@ -1,6 +1,6 @@
 import "./App.scss";
 import { SharedLayout } from "./Components";
-// import { Login, Dashboard } from "./Pages";
+import { Login, Users } from "./Pages";
 function App() {
   return (
     <div className="App">
