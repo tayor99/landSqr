@@ -94,15 +94,13 @@
       font-size: 14px;
       color: #545f7d;
     }
-    button {
-      background-color: #fff;
+    span {
       color: #39cdcc;
       font-weight: 600;
       font-size: 0.85rem;
       text-transform: uppercase;
-      outline: none;
-      border: none;
       cursor: pointer;
+      align-self: center;
     }
   }
 }

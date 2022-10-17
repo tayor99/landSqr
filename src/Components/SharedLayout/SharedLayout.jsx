@@ -2,6 +2,7 @@ import Navbar from "./Navbar/Navbar";
 import Sidebar from "./Sidebar/Sidebar";
 import "./SharedLayout.scss";
 import { UserDetail, Users } from "../../Pages";
+import { Outlet } from "react-router-dom";
 
 const SharedLayout = () => {
   return (
@@ -12,8 +13,8 @@ const SharedLayout = () => {
         </div>
         <div className="sharedLayout__body">
           <Navbar />
-          {/* <Users /> */}
-          <UserDetail />
+         
+          <Outlet/>
         </div>
       </div>
     </>

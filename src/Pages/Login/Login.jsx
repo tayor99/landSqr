@@ -1,7 +1,13 @@
 import "./_login.scss";
 import Logo from "../../Assets/Logo.svg";
 import SignImg from "../../Assets/signIn.png";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+  let navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate("/dashboard/users");
+  };
   return (
     <>
       <div className="wrapper">
@@ -26,13 +32,13 @@ const Login = () => {
               <p>Enter details to login</p>
             </div>
             <div className="login__rightBody">
-              <form className="login__form">
+              <form className="login__form" onSubmit={handleSubmit}>
                 <div className="form__details">
                   <input type="text" placeholder="Email" />
                 </div>
                 <div className="form__details ">
                   <input type="password" placeholder="Password" />
-                  <button>show</button>
+                  <span>show</span>
                 </div>
                 <p>forgot password</p>
 

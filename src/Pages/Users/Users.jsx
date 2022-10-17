@@ -7,12 +7,16 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import { AiOutlineDown } from "react-icons/ai";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
   const [showFilterModal, setShowFilterModel] = useState(false);
-  const [showOpionModal, setShowOptionModal] = useState(false);
 
+  let navigate = useNavigate()
+  const handleClick=(id)=>{
+      navigate(`/dashboard/users/${id}`)
+  }
   useEffect(() => {
     const getUserData = async () => {
       const { data } = await axios.get(
@@ -103,7 +107,7 @@ const Users = () => {
               <tbody>
                 {users.map((user) => {
                   return (
-                    <tr key={user.id}>
+                    <tr key={user.id} onClick={(id)=> handleClick(user.id)}>
                       <td>{user.orgName}</td>
                       <td>{user.userName}</td>
                       <td>{user.email}</td>
