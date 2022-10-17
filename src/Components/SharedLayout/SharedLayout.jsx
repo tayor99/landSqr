@@ -1,7 +1,7 @@
 import Navbar from "./Navbar/Navbar";
 import Sidebar from "./Sidebar/Sidebar";
 import "./SharedLayout.scss";
-import { Users } from "../../Pages";
+import { UserDetail, Users } from "../../Pages";
 
 const SharedLayout = () => {
   return (
@@ -12,7 +12,8 @@ const SharedLayout = () => {
         </div>
         <div className="sharedLayout__body">
           <Navbar />
-          <Users />
+          {/* <Users /> */}
+          <UserDetail />
         </div>
       </div>
     </>
